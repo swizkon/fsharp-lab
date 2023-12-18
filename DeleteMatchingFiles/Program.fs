@@ -10,14 +10,14 @@ let main argv =
     Console.WriteLine("dmf (Delete mathcing files")
 
     
-    let path = @"C:\dev\azuredevops\volvogroup\Penta-ECOM2.0-ms"
+    let path = @"Path/to/files"
     let pattern = "*.cs"
 
     let files = Directory.GetFiles(path, pattern, SearchOption.AllDirectories)
 
     let count = files |> Array.length
 
-    let path = @"C:\dev\azuredevops\volvogroup\Penta-ECOM2.0-ms\Penta.ECom.Backend"
+    let path = @"Path/to/files"
     let pattern = "HasUserRolesFilterAttribute.*"
 
     Directory.GetFiles(path, pattern, SearchOption.AllDirectories)
